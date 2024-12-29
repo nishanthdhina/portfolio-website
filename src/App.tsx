@@ -11,6 +11,7 @@ function App() {
   const fullText = '> Initializing Portfolio...';
   const [formStatus, setFormStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
   const formRef = useRef<HTMLFormElement>(null);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     let currentText = '';
@@ -67,6 +68,25 @@ function App() {
     }
   };
 
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      const headerOffset = 80;
+      const elementPosition = section.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+    setIsMobileMenuOpen(false);
+  };
+
   return (
     <div className="app">
       <div className="animated-bg"></div>
@@ -82,13 +102,45 @@ function App() {
         <main className="main-content">
           <header className="header">
             <h1>Nishanth Dhina</h1>
-            <nav>
+            <button className="hamburger-btn" onClick={toggleMobileMenu}>
+              <div className={`hamburger-lines ${isMobileMenuOpen ? 'active' : ''}`}>
+                <span className="line line1"></span>
+                <span className="line line2"></span>
+                <span className="line line3"></span>
+              </div>
+            </button>
+            <nav className="desktop-nav">
               <a href="#education">Education</a>
               <a href="#skills">Skills</a>
               <a href="#projects">Projects</a>
               <a href="#contact">Contact</a>
             </nav>
           </header>
+          
+          {/* Mobile Navigation Menu */}
+          <div className={`mobile-nav ${isMobileMenuOpen ? 'open' : ''}`}>
+            <div className="mobile-nav-content">
+              <a href="#education" onClick={(e) => { e.preventDefault(); scrollToSection('education'); }}>Education</a>
+              <a href="#skills" onClick={(e) => { e.preventDefault(); scrollToSection('skills'); }}>Skills</a>
+              <a href="#projects" onClick={(e) => { e.preventDefault(); scrollToSection('projects'); }}>Projects</a>
+              <a href="#contact" onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }}>Contact</a>
+              
+              <div className="mobile-social-links">
+                <a href="https://www.linkedin.com/in/nishanthdhina" target="_blank" rel="noopener noreferrer">
+                  <i className="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/nishanthdhina" target="_blank" rel="noopener noreferrer">
+                  <i className="fab fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com/nishanthdhin4" target="_blank" rel="noopener noreferrer">
+                  <i className="fab fa-twitter"></i>
+                </a>
+                <a href="https://github.com/nishanthdhina" target="_blank" rel="noopener noreferrer">
+                  <i className="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
 
           <section id="hero" className="hero-section">
             <div className="hero-content">
