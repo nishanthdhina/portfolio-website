@@ -2,6 +2,9 @@ import { useState, useEffect, useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import './App.css'
 
+// Initialize EmailJS
+emailjs.init('ItDbSGS9fjRn4qS7q');
+
 function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [loadingText, setLoadingText] = useState('');
@@ -37,13 +40,14 @@ function App() {
     try {
       setFormStatus('sending');
       
-      await emailjs.sendForm(
+      const result = await emailjs.sendForm(
         'service_0mn9yks',
-        'template_zojtfjj',
+        'template_875uwdc',
         formRef.current,
         'ItDbSGS9fjRn4qS7q'
       );
       
+      console.log('Success:', result.text);
       setFormStatus('success');
       if (formRef.current) {
         formRef.current.reset();
@@ -364,19 +368,33 @@ function App() {
                   <div className="form-group">
                     <div className="input-container">
                       <i className="fas fa-user"></i>
-                      <input type="text" name="user_name" placeholder="Your Name" required />
+                      <input 
+                        type="text" 
+                        name="from_name" 
+                        placeholder="Your Name" 
+                        required 
+                      />
                     </div>
                   </div>
                   <div className="form-group">
                     <div className="input-container">
                       <i className="fas fa-envelope"></i>
-                      <input type="email" name="user_email" placeholder="Your Email" required />
+                      <input 
+                        type="email" 
+                        name="from_email" 
+                        placeholder="Your Email" 
+                        required 
+                      />
                     </div>
                   </div>
                   <div className="form-group">
                     <div className="input-container">
                       <i className="fas fa-pen"></i>
-                      <textarea name="message" placeholder="Your Message" required></textarea>
+                      <textarea 
+                        name="message" 
+                        placeholder="Your Message" 
+                        required
+                      ></textarea>
                     </div>
                   </div>
                   <button 
