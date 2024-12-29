@@ -208,7 +208,7 @@ function App() {
                     </div>
                     <div className="timeline-content">
                       <h4>Idea Inception</h4>
-                      <p>Early 2024</p>
+                      <p>September 2024</p>
                       <div className="team-member">
                         <span>Nishanth Dhinakar</span>
                         <small>CEO & Web Designer</small>
@@ -225,14 +225,14 @@ function App() {
                     </div>
                     <div className="timeline-content">
                       <h4>Development</h4>
-                      <p>February 2024</p>
+                      <p>January 2024</p>
                       <div className="team-member">
                         <span>Akshanan Mayuran</span>
                         <small>CFO & Copywriter</small>
                       </div>
                       <div className="team-member">
                         <span>Caleb Grobler</span>
-                        <small>Social Media Manager & App Designer</small>
+                        <small>COO & App Designer</small>
                       </div>
                     </div>
                   </div>
@@ -242,7 +242,7 @@ function App() {
                     </div>
                     <div className="timeline-content">
                       <h4>Launch</h4>
-                      <p>March 2024</p>
+                      <p>March 2025</p>
                       <div className="team-member">
                         <span>Full Team Collaboration</span>
                         <small>Working together to make it happen</small>
