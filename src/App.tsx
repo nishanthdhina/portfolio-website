@@ -111,8 +111,7 @@ function App() {
             </button>
             <nav className="desktop-nav">
               <a href="#education">Education</a>
-              <a href="#skills">Skills</a>
-              <a href="#projects">Projects</a>
+              <a href="#projects-section">Projects</a>
               <a href="#contact">Contact</a>
             </nav>
           </header>
@@ -121,7 +120,6 @@ function App() {
           <div className={`mobile-nav ${isMobileMenuOpen ? 'open' : ''}`}>
             <div className="mobile-nav-content">
               <a href="#education" onClick={(e) => { e.preventDefault(); scrollToSection('education'); }}>Education</a>
-              <a href="#skills" onClick={(e) => { e.preventDefault(); scrollToSection('skills'); }}>Skills</a>
               <a href="#projects" onClick={(e) => { e.preventDefault(); scrollToSection('projects'); }}>Projects</a>
               <a href="#contact" onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }}>Contact</a>
               
@@ -199,6 +197,8 @@ function App() {
                     <p>
                       Our ultimate goal? To create a space where employees from all walks of life, especially those from immigrant backgrounds, can overcome language barriers and thrive in their careers. ProVocis isn't just a product—it's our way of opening doors, empowering growth, and helping people succeed.
                     </p>
+                    <p>
+                    Building ProVocis hasn’t been without its challenges, but the journey so far has been incredibly rewarding. As a team, we’ve spent countless hours brainstorming, developing, and refining the app to ensure it meets the needs of our users. With each step, we’ve stayed focused on our mission to help people from all backgrounds improve their careers and communicate with confidence. Though we haven’t launched yet, we’re excited about the future and the potential of ProVocis to make a meaningful difference in the lives of professionals everywhere.</p>
                   </div>
                 </div>
                 <div className="story-timeline">
@@ -225,7 +225,7 @@ function App() {
                     </div>
                     <div className="timeline-content">
                       <h4>Development</h4>
-                      <p>January 2024</p>
+                      <p>January 2025</p>
                       <div className="team-member">
                         <span>Akshanan Mayuran</span>
                         <small>CFO & Copywriter</small>
@@ -320,7 +320,7 @@ function App() {
             </div>
           </section>
 
-          <section className="projects-section">
+          <section id="projects-section" className="projects">
             <div className="container">
               <h2 className="section-title">Featured Projects</h2>
               <div className="projects-grid">
@@ -392,7 +392,7 @@ function App() {
             </div>
           </section>
 
-          <section className="contact-section">
+          <section id="contact" className="contact-section">
             <div className="container">
               <h2 className="section-title">Get in Touch</h2>
               <div className="contact-container">
