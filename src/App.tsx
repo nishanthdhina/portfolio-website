@@ -160,7 +160,7 @@ function App() {
                 <span>ProVocis</span>
               </div>
               <p className="hero-about">
-                17 years old, </br> I am a driven and innovative developer passionate about creating impactful digital solutions. With expertise in web development and a growing portfolio across diverse domains, I combine creativity, precision, and a vision for excellence to deliver meaningful results on every project.
+                17 years old, <br> I am a driven and innovative developer passionate about creating impactful digital solutions. With expertise in web development and a growing portfolio across diverse domains, I combine creativity, precision, and a vision for excellence to deliver meaningful results on every project.
               </p>
               <div className="hero-stats">
                 <div className="stat-item">
