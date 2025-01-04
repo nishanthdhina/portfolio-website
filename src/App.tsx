@@ -160,7 +160,7 @@ function App() {
                 <span>ProVocis</span>
               </div>
               <p className="hero-about">
-                At 17 years old, I am a driven and innovative developer passionate about creating impactful digital solutions. With expertise in web development and a growing portfolio across diverse domains, I combine creativity, precision, and a vision for excellence to deliver meaningful results on every project.
+                17 years old, </br>I am a driven and innovative developer passionate about creating impactful digital solutions. With expertise in web development and a growing portfolio across diverse domains, I combine creativity, precision, and a vision for excellence to deliver meaningful results on every project.
               </p>
               <div className="hero-stats">
                 <div className="stat-item">
@@ -333,7 +333,6 @@ function App() {
                   <div className="project-tech">
                     <span>Flutter</span>
                     <span>Firebase</span>
-                    <span>SwiftUI</span>
                     <span>AI</span>
                   </div>
                   <a href="https://provocis.com" className="project-link" target="_blank" rel="noopener noreferrer">
@@ -348,9 +347,11 @@ function App() {
                   <h3>RecEzy</h3>
                   <p>An AI-powered hiring management bot that streamlines recruitment processes by matching candidates with the right opportunities efficiently and effectively.</p>
                   <div className="project-tech">
-                    <span>React</span>
-                    <span>Node.js</span>
-                    <span>AI</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JS</span>
+                    <span>GSAP</span>
+
                   </div>
                   <a href="https://www.recezy.ai" className="project-link" target="_blank" rel="noopener noreferrer">
                     Visit Website <i className="fas fa-external-link-alt"></i>
@@ -364,9 +365,11 @@ function App() {
                   <h3>AdevTech</h3>
                   <p>A hub for innovative tech solutions, providing businesses with cutting-edge tools and services to enhance their operations and growth.</p>
                   <div className="project-tech">
-                    <span>React</span>
-                    <span>Node.js</span>
-                    <span>MongoDB</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JS</span>
+                    <span>GSAP</span>
+
                   </div>
                   <a href="https://www.adevtechcorp.com/" className="project-link" target="_blank" rel="noopener noreferrer">
                     Visit Website <i className="fas fa-external-link-alt"></i>
@@ -380,9 +383,9 @@ function App() {
                   <h3>CloudHub</h3>
                   <p>A platform that simplifies cloud integration and management, enabling seamless deployment and scaling for modern digital infrastructure.</p>
                   <div className="project-tech">
-                    <span>React</span>
-                    <span>Firebase</span>
-                    <span>Node.js</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JS</span>
                   </div>
                   <a href="https://twrteam.vercel.app/" className="project-link" target="_blank" rel="noopener noreferrer">
                     Visit Website <i className="fas fa-external-link-alt"></i>
