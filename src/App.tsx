@@ -401,7 +401,7 @@ function App() {
               <div className="contact-container">
                 <div className="contact-info">
                   <h3>Let's Connect</h3>
-                  <p>Have a project in mind or just want to chat? I'd love to hear from you!</p>
+                  <p>Have a project in mind or just want to chat? <br /> I'd love to hear from you!</p>
                   <div className="contact-methods">
                     <div className="contact-method">
                       <i className="fas fa-envelope"></i>
