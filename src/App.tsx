@@ -110,9 +110,9 @@ function App() {
               </div>
             </button>
             <nav className="desktop-nav">
-              <a href="#education">Education</a>
-              <a href="#projects-section">Projects</a>
-              <a href="#contact">Contact</a>
+              <a href="#education" onClick={(e) => { e.preventDefault(); scrollToSection('education'); }}>Education</a>
+              <a href="#projects-section" onClick={(e) => { e.preventDefault(); scrollToSection('projects-section'); }}>Projects</a>
+              <a href="#contact" onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }}>Contact</a>
             </nav>
           </header>
           
@@ -135,8 +135,8 @@ function App() {
                 </a>
                 <a href="https://github.com/nishanthdhina" target="_blank" rel="noopener noreferrer">
                   <i className="fab fa-github"></i>
-                </a>
-              </div>
+        </a>
+      </div>
             </div>
           </div>
 
@@ -160,7 +160,9 @@ function App() {
                 <span>ProVocis</span>
               </div>
               <p className="hero-about">
-                At 17 years old, I am a driven and innovative developer passionate about creating impactful digital solutions. With expertise in web development and a growing portfolio across diverse domains, I combine creativity, precision, and a vision for excellence to deliver meaningful results on every project.
+                17 years old,
+                <br />
+                I am a driven and innovative developer passionate about creating impactful digital solutions. With expertise in web development and a growing portfolio across diverse domains, I combine creativity, precision, and a vision for excellence to deliver meaningful results on every project.
               </p>
               <div className="hero-stats">
                 <div className="stat-item">
@@ -168,7 +170,7 @@ function App() {
                   <span className="stat-label">Years of Experience</span>
                 </div>
                 <div className="stat-item">
-                  <span className="stat-number">10+</span>
+                  <span className="stat-number">5+</span>
                   <span className="stat-label">Projects Completed</span>
                 </div>
                 <div className="stat-item">
@@ -298,8 +300,8 @@ function App() {
                       <p className="timeline-location">
                         <i className="fas fa-map-marker-alt"></i>
                         Germany
-                      </p>
-                    </div>
+        </p>
+      </div>
                   </div>
 
                   <div className="timeline-item">
@@ -307,7 +309,7 @@ function App() {
                       <i className="fas fa-briefcase"></i>
                     </div>
                     <div className="timeline-content">
-                      <h4>Mercedes-Benz Internship</h4>
+                      <h4>Mercedes-Benz Apprenticeship</h4>
                       <p className="timeline-period">2025 - 2028</p>
                       <p className="timeline-location">
                         <i className="fas fa-map-marker-alt"></i>
@@ -331,10 +333,11 @@ function App() {
                   <h3>ProVocis</h3>
                   <p>A language learning app tailored for professionals, offering industry-specific vocabulary to help users improve communication and advance in their careers.</p>
                   <div className="project-tech">
-                    <span>Flutter</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
                     <span>Firebase</span>
-                    <span>SwiftUI</span>
-                    <span>AI</span>
+                    <span>Flutter</span>
                   </div>
                   <a href="https://provocis.com" className="project-link" target="_blank" rel="noopener noreferrer">
                     Visit Website <i className="fas fa-external-link-alt"></i>
@@ -348,9 +351,9 @@ function App() {
                   <h3>RecEzy</h3>
                   <p>An AI-powered hiring management bot that streamlines recruitment processes by matching candidates with the right opportunities efficiently and effectively.</p>
                   <div className="project-tech">
-                    <span>React</span>
-                    <span>Node.js</span>
-                    <span>AI</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
                   </div>
                   <a href="https://www.recezy.ai" className="project-link" target="_blank" rel="noopener noreferrer">
                     Visit Website <i className="fas fa-external-link-alt"></i>
@@ -364,9 +367,10 @@ function App() {
                   <h3>AdevTech</h3>
                   <p>A hub for innovative tech solutions, providing businesses with cutting-edge tools and services to enhance their operations and growth.</p>
                   <div className="project-tech">
-                    <span>React</span>
-                    <span>Node.js</span>
-                    <span>MongoDB</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>GSAP</span>
                   </div>
                   <a href="https://www.adevtechcorp.com/" className="project-link" target="_blank" rel="noopener noreferrer">
                     Visit Website <i className="fas fa-external-link-alt"></i>
@@ -380,9 +384,8 @@ function App() {
                   <h3>CloudHub</h3>
                   <p>A platform that simplifies cloud integration and management, enabling seamless deployment and scaling for modern digital infrastructure.</p>
                   <div className="project-tech">
-                    <span>React</span>
-                    <span>Firebase</span>
-                    <span>Node.js</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
                   </div>
                   <a href="https://twrteam.vercel.app/" className="project-link" target="_blank" rel="noopener noreferrer">
                     Visit Website <i className="fas fa-external-link-alt"></i>
@@ -414,8 +417,8 @@ function App() {
                 </div>
                 <form ref={formRef} className="contact-form" onSubmit={handleSubmit}>
                   <div className="form-header">
-                    <h3>Send a Message</h3>
-                    <p>I'll get back to you as soon as possible.</p>
+                    <h3></h3>
+                    <p></p>
                   </div>
                   <div className="form-group">
                     <div className="input-container">
@@ -471,7 +474,7 @@ function App() {
                       </>
                     ) : (
                       <>
-                        <span>Send Message</span>
+                        <span>Send Message    </span>
                         <i className="fas fa-paper-plane"></i>
                       </>
                     )}
