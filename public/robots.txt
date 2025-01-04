@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://nishanthdhina.dev/sitemap.xml 
