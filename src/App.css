@@ -11,6 +11,39 @@
   --gradient-3: #06b6d4;
 }
 
+/* Loading Screen Styles */
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--background-color);
+  z-index: 9999;
+}
+
+.loader-content {
+  text-align: center;
+}
+
+.typing-animation {
+  display: inline-block;
+  color: var(--text-color);
+  font-family: 'Courier New', monospace;
+  font-size: 1.5rem;
+  border-right: 2px solid var(--accent-color);
+  padding-right: 5px;
+  animation: blink 0.75s step-end infinite;
+}
+
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: var(--accent-color); }
+}
+
 * {
   margin: 0;
   padding: 0;
