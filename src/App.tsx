@@ -120,7 +120,7 @@ function App() {
           <div className={`mobile-nav ${isMobileMenuOpen ? 'open' : ''}`}>
             <div className="mobile-nav-content">
               <a href="#education" onClick={(e) => { e.preventDefault(); scrollToSection('education'); }}>Education</a>
-              <a href="#projects" onClick={(e) => { e.preventDefault(); scrollToSection('projects'); }}>Projects</a>
+              <a href="#projects-section" onClick={(e) => { e.preventDefault(); scrollToSection('projects-section'); }}>Projects</a>
               <a href="#contact" onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }}>Contact</a>
               
               <div className="mobile-social-links">
@@ -135,8 +135,8 @@ function App() {
                 </a>
                 <a href="https://github.com/nishanthdhina" target="_blank" rel="noopener noreferrer">
                   <i className="fab fa-github"></i>
-        </a>
-      </div>
+                </a>
+              </div>
             </div>
           </div>
 
@@ -349,7 +349,7 @@ function App() {
                     <i className="fas fa-users"></i>
                   </div>
                   <h3>RecEzy</h3>
-                  <p>An AI-powered hiring management bot that streamlines recruitment processes by matching candidates with the right opportunities efficiently and effectively.</p>
+                  <p>An AI-powered recruitment solution that streamlines hiring processes with intelligent automation, advanced candidate sourcing, and seamless workflow management.</p>
                   <div className="project-tech">
                     <span>HTML</span>
                     <span>CSS</span>
@@ -362,17 +362,47 @@ function App() {
 
                 <div className="project-card">
                   <div className="project-icon">
+                    <i className="fas fa-plane"></i>
+                  </div>
+                  <h3>Home of Aviation</h3>
+                  <p>A thriving global community connecting aviation enthusiasts worldwide. Built and scaled to over 1,000 active members, facilitating knowledge sharing, resource exchange, and meaningful connections in the aviation industry.</p>
+                  <div className="project-tech">
+                    <span>Marketing</span>
+                    <span>Socials</span>
+                    <span>Memberships</span>
+                  </div>
+                  <a href="https://discord.gg/cUv7TepPpV" className="project-link" target="_blank" rel="noopener noreferrer">
+                    Join Community <i className="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+
+                <div className="project-card">
+                  <div className="project-icon">
                     <i className="fas fa-laptop-code"></i>
                   </div>
                   <h3>AdevTech</h3>
-                  <p>A hub for innovative tech solutions, providing businesses with cutting-edge tools and services to enhance their operations and growth.</p>
+                  <p>A comprehensive SaaS platform offering cutting-edge HR solutions including AI-powered recruitment, performance management, and employee evaluation tools to transform HR operations.</p>
                   <div className="project-tech">
                     <span>HTML</span>
                     <span>CSS</span>
-                    <span>JavaScript</span>
                     <span>GSAP</span>
                   </div>
-                  <a href="https://www.adevtechcorp.com/" className="project-link" target="_blank" rel="noopener noreferrer">
+                  <a href="https://adevtechdemo.vercel.app/" className="project-link" target="_blank" rel="noopener noreferrer">
+                    Visit Website <i className="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+
+                <div className="project-card">
+                  <div className="project-icon">
+                    <i className="fas fa-chart-line"></i>
+                  </div>
+                  <h3>Trinity Trading Group</h3>
+                  <p>An exclusive crypto trading community platform delivering expert market analysis, real-time callouts, and educational resources. Features a sophisticated tracking system with over 30+ monthly signals and a 58% success rate.</p>
+                  <div className="project-tech">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                  </div>
+                  <a href="https://trinitydemo.vercel.app/index.html" className="project-link" target="_blank" rel="noopener noreferrer">
                     Visit Website <i className="fas fa-external-link-alt"></i>
                   </a>
                 </div>

@@ -334,7 +334,6 @@ body {
 }
 
 .mobile-nav {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -346,6 +345,9 @@ body {
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .mobile-nav.open {
@@ -369,6 +371,11 @@ body {
   font-size: 1.5rem;
   font-weight: 600;
   transition: all 0.3s ease;
+}
+
+.mobile-nav-content a:hover {
+  color: var(--accent-color);
+  transform: translateY(-3px);
 }
 
 .mobile-social-links {
@@ -404,6 +411,10 @@ body {
     display: block;
   }
 
+  .mobile-nav {
+    display: flex;
+  }
+
   .hero-section {
     padding: 8rem 1rem 2rem;
     align-items: flex-start;
@@ -428,6 +439,10 @@ body {
   .hero-stats {
     grid-template-columns: 1fr;
     gap: 1rem;
+  }
+
+  .story-section {
+    display: none;
   }
 
   @keyframes slide {
